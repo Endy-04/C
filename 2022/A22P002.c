@@ -1,82 +1,173 @@
 /* Nome: Andrei Francesco
    Cognome: Burlacu
+   Specializzazione: Informatica
    Data di Creazione: 17/11/2022
-   Traccia: Menu con tre opzioni: 
-   1. Conteggio positivi/negativi su 5 numeri.
-   2. Trasformazione negativi in positivi, media, conteggio pari/dispari su 3 numeri.
-   3. Ricerca del peso minimo tra 4 monete.
+   nome file: A223AP007
+   Revisione: 1 
+   Traccia:Date tre opzioni, nella prima inserire cinque numeri, mostrare quanti sono 
+positivi e quanti negativi, nella seconda inserire tre numero, trasformare i negativi in 
+positivi, visualizzare la media con due decimali e visualizzare quanti pari e dispari
+nella terza, inserire il peso di quattro monete d'oro dire quale pesa meno.
 */
-
 #include <stdio.h>
 
-int main() {
-    int sc, contpos = 0, contneg = 0, par = 0, dis = 0, pos_min = 1;
-    float num, med = 0, p, min = 0;
-
-    printf("--- MENU SELEZIONE ---\n");
-    printf("1. Positivi e negativi (su 5 numeri)\n");
-    printf("2. Trasforma in positivi, media e pari/dispari (su 3 numeri)\n");
-    printf("3. Trova la moneta piu' leggera (su 4 pesate)\n");
-    printf("0. Esci\n");
-    printf("Scelta: ");
-    scanf("%d", &sc);
-
-    switch (sc) {
-        case 1:
-            for (int i = 1; i <= 5; i++) {
-                printf("Inserisci il numero %d: ", i);
-                scanf("%f", &num);
-                if (num > 0) contpos++;
-                else if (num < 0) contneg++;
+int main()
+{
+                                                      /* Dichiarazione variabili */
+  int sc, contpos=0, contneg=0, q, par=0, dis=0, pos_min=0;
+  float num, re, med=0, p, min=0;
+                                                    /* Acquisizione della scelta */ 
+  printf("Premi 1 per vedere su cinque numeri quanti ne sono positivi e quanti negativi \n"
+        "Premi 2 per trasformare i numeri negativi in positivi, fare la media e visualizzare quanti pari e dispari \n"
+        "Premi 3 per visualizzare su quattro pesate di monete d'oro quale pesa meno \n"
+        "Premi 0 per uscire \n");
+  scanf("%d", &sc);
+  switch (sc)
+                                      /* Acquisizione dati input e conta numeri 
+                                        positivi e negativi tramite contatore */
+        { case 1:
+          printf("Inserisci il primo numero");
+          scanf("%f", &num);
+          if (num>0)
+            { contpos=contpos+1;
             }
-            printf("\nNumeri positivi: %d\n", contpos);
-            printf("Numeri negativi: %d\n", contneg);
-            break;
-
-        case 2:
-            for (int i = 1; i <= 3; i++) {
-                printf("Inserisci il numero %d: ", i);
-                scanf("%f", &num);
-                
-                // Trasformo i negativi in positivi
-                if (num < 0) num = num * (-1);
-                
-                // Calcolo pari/dispari (usando il cast a int per l'operatore %)
-                if ((int)num % 2 == 0) par++;
-                else dis++;
-                
-                med += num; // Sommo per la media
+          else if (num < 0)
+                 { contneg= contneg+1;
+                 }
+          printf("Inserisci il secondo numero");
+          scanf("%f", &num);
+          if (num>0)
+            { contpos= contpos+1;
             }
-            printf("\nNumeri pari: %d\n", par);
-            printf("Numeri dispari: %d\n", dis);
-            printf("La media (valori assoluti) e': %.2f\n", med / 3);
-            break;
-
-        case 3:
-            for (int i = 1; i <= 4; i++) {
-                do {
-                    printf("Inserire il peso della moneta %d: ", i);
-                    scanf("%f", &p);
-                } while (p <= 0); // Controllo che il peso sia valido
-
-                // Se è la prima moneta, la imposto come minimo iniziale
-                // Altrimenti controllo se quella attuale è minore del minimo precedente
-                if (i == 1 || p < min) {
-                    min = p;
-                    pos_min = i;
-                }
+          else if (num < 0)
+                 { contneg= contneg+1;
+                 }
+          printf("Inserisci il terzo numero");
+          scanf("%f", &num);
+          if (num>0)
+            {  contpos= contpos+1;
             }
-            printf("\nLa moneta che pesa meno e' la n.: %d\n", pos_min);
-            printf("Il suo peso e': %.2f\n", min);
-            break;
-
-        case 0:
-            printf("Uscita in corso...\n");
-            return 0;
-
-        default:
-            printf("Scelta non valida. Riprova.\n");
-    }
-
-    return 0;
+          else if (num < 0)
+                 {  contneg= contneg+1;
+                 }
+          printf("Inserisci il quarto numero");
+          scanf("%f", &num);
+          if (num>0)
+            {  contpos= contpos+1;
+            }
+          else if (num < 0)
+                 {  contneg= contneg+1;
+                 }
+          printf("Inserisci il quinto numero");
+          scanf("%f", &num);
+          if (num>0)
+            {  contpos= contpos+1;
+            }
+          else if (num < 0)
+                 {  contneg= contneg+1;
+                 }
+          printf("I numeri positivi sono: %d \n", contpos);
+          printf("I numeri negativi sono: %d", contneg);
+          break;
+                                    /* Acquisizione dati input e trasformazione
+                                            numeri negativi a positivi */
+          case 2:
+          printf("Inserisci il primo numero");
+          scanf("%f", &num);
+          if (num<0)
+            {  num= num*(-1);
+            }
+                                            /* Conta dei numeri pari e dispari 
+                                            tramite il quoziente e il resto */
+          q= (int)num/2;
+          re= num-q*2;
+          if (re == 0)
+            {  par= par+1;
+            }
+          else
+              {  dis= dis+1;
+              }
+          med= med+num;
+          printf("Inserisci il secondo numero");
+          scanf("%f", &num);
+          if (num<0)
+            {  num= num*(-1);
+            }
+          q= (int)num/2;
+          re= num-q*2;
+          if (re == 0)
+            {  par= par+1;
+            }
+          else
+              {  dis= dis+1;
+              }
+          med= med+num;
+          printf("Inserisci il terzo numero");
+          scanf("%f", &num);
+          if (num<0)
+            {  num= num*(-1);
+            }
+          q= (int)num/2;
+          re= num-q*2;
+          if (re == 0)
+            {  par= par+1;
+            }
+          else
+              {  dis= dis+1;
+              }
+          med= med+num;
+                                            /* Calcolo della media e stampo 
+                                            della media con due decimali */
+          med= med/3;
+          printf("I numeri pari sono: %d", par);
+          printf("I numeri dispari sono: %d", dis);
+          printf("La media è: %.2f", med);
+          break;
+                                      /* Acquisizione dati in input */
+          case 3:
+          do
+            {  printf("Inserire il peso della prima moneta d'oro");
+               scanf("%f", &p);
+            }
+          while (!(p>0));
+                                               /* Assegnazione del minimo e 
+                                               posizione del minimo */ 
+          pos_min=1;
+          min=p;
+          do
+            {  printf("Inserire il peso della seconda moneta d'oro ");
+               scanf("%f", &p);
+            }
+          while (!(p>0));
+          if (p<min)
+            {  pos_min=2;
+               min=p;
+            }
+          do
+            {  printf("Inserire il peso della terza moneta d'oro ");
+               scanf("%f", &p);
+            }
+          while (!(p>0));
+          if (p<min)
+            {  pos_min=3;
+               min=p;
+            }
+          do
+            {  printf("Inserire il peso della quarta moneta d'oro ");
+               scanf("%f", &p);
+            }
+          while (!(p>0));
+          if (p<min)
+            {  pos_min=4;
+               min=p;
+            }
+          printf("La moneta che pesa di meno è la: %d \n"
+                 "Il suo valore è: %f", pos_min, min);
+          break;
+          case 0:
+          return 0;
+          default:
+          printf("Reinserisci un numero, tra 0 e 3");
+        }
+return 0;          
 }
