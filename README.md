@@ -60,12 +60,18 @@ make clean       # Removes binaries in ../bin/2022/
 
 ## 📁 Projects by Year
 
-### 2022 - Fundamentals
+### 2022 - Fundamentals (7 programs)
 | Project | Description | Topics |
 |---------|-------------|--------|
-| **A22P001** | Digit extraction & display | Input validation, loops, conditionals |
+| **A22P001** | Digit extraction & display | Input validation, loops, control flow |
+| **A22P002** | Menu-driven statistics | Conditionals, loops, calculations |
+| **A22P003** | Multi-option analysis | Menu systems, arrays, logic |
+| **A22P004** | String/number processing | Functions, loops, algorithms |
+| **A22P005** | Mathematical calculations | Math operations, iterations, precision |
+| **A22P006** | Data manipulation | Variables, operators, conditions |
+| **A22P007** | Program logic & flow | Decision trees, user input handling |
 
-*See [`2022/README.md`](2022/README.md) for detailed project descriptions.*
+*See [`2022/README.md`](2022/README.md) for detailed descriptions and usage examples.*
 
 ---
 
