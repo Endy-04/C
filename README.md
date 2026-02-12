@@ -12,3 +12,29 @@ Preferred workflow
 - For simple builds, add per-year `Makefile` files that place executables into `bin/<year>/`.
 
 See `.gitignore` for ignored files and `2022/README.md` for an example per-year README.
+
+Come compilare
+
+- Compilare tutti i sorgenti nell'anno (es. `2022`):
+```bash
+cd 2022
+make
+```
+- Compilare un singolo programma (es. `A22P001`):
+```bash
+cd 2022
+make A22P001
+```
+- Pulire i binari generati:
+```bash
+cd 2022
+make clean
+```
+
+- Aggiungere nuovi sorgenti, committare e pushare:
+```bash
+git add 2022/*.c
+git commit -m "Add new 2022 exercises"
+git push central main
+git push origin main
+```
