@@ -18,8 +18,8 @@ A curated collection of **C programming projects, algorithms, and academic exerc
 ### Repository Structure
 ```
 C/
-├── 2022/           # Year 2022: foundational algorithms & exercises
-├── 2023/           # Year 2023: advanced projects (coming soon)
+├── 2022/           # Year 2022: foundational algorithms & exercises (7 programs)
+├── 2023/           # Year 2023: advanced projects (in progress)
 ├── Makefile        # Per-year build automation
 ├── README.md       # This file
 └── LICENSE         # MIT License
@@ -72,6 +72,13 @@ make clean       # Removes binaries in ../bin/2022/
 | **A22P007** | Program logic & flow | Decision trees, user input handling |
 
 *See [`2022/README.md`](2022/README.md) for detailed descriptions and usage examples.*
+
+### 2023 - Advanced Projects (In Progress)
+| Project | Description | Topics |
+|---------|-------------|--------|
+| *To be added* | Programs will be added as development progresses | Advanced algorithms, data structures |
+
+*See [`2023/README.md`](2023/README.md) for detailed descriptions and usage examples.*
 
 ---
 
