@@ -90,7 +90,7 @@ See [LICENSE](LICENSE) file for details.
 
 Feel free to explore, fork, or reach out:
 - **GitHub:** [@Endy-04](https://github.com/Endy-04)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/andrei-francesco-burlacu-2b5759361)
+- **LinkedIn:** [Andrei Francesco Burlacu](https://www.linkedin.com/in/andrei-francesco-burlacu-2b5759361)
 
 ---
 
