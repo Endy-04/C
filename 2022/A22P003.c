@@ -4,7 +4,9 @@ Cognome: Burlacu
 Specializzazione: Informatica
 Data di creazione: 23/11/2022
 Nome file: A22P003
-Traccia: Menu con tre opzioni: 1. Esecuzione di 50 numeri usando il ciclo while. 2. Esecuzione di 50 numeri usando il ciclo do while. 3. Esecuzione di 50 numeri usando il ciclo for.
+Traccia: Menu con tre opzioni: 1. Esecuzione di 50 numeri usando il ciclo while. ù
+2. Esecuzione di 50 numeri usando il ciclo do while. 
+3. Esecuzione di 50 numeri usando il ciclo for.
 Revisione: 0
 Data di revisione: 23/11/2022
 Traccia:
