@@ -4,13 +4,13 @@
 ![Language: C](https://img.shields.io/badge/Language-C-00599C?logo=c)
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 
-A curated collection of **C programming projects, algorithms, and academic exercises** spanning multiple years of learning and professional development. This repository showcases algorithmic thinking, data structure implementation, and software engineering best practices in C.
+A curated collection of **C programming projects, algorithms, and academic exercises** spanning multiple years of learning. This repository showcases algorithmic thinking, data structure implementation in C.
 
 ---
 
 ## 📋 Overview
 
-- **Language:** C (ANSI C / C11)
+- **Language:** C
 - **Focus Areas:** Algorithms, educational projects, problem-solving
 - **Build System:** GNU Make
 - **License:** MIT
@@ -69,48 +69,6 @@ make clean       # Removes binaries in ../bin/2022/
 
 ---
 
-## 💻 Development Workflow
-
-### Adding New Projects
-```bash
-# 1. Create your .c file in the year folder
-echo '#include <stdio.h>\nint main() { printf("Hello\\n"); return 0; }' > 2022/A22P002.c
-
-# 2. Compile
-cd 2022
-make A22P002
-
-# 3. Test
-./bin/2022/A22P002
-
-# 4. Commit & push
-git add 2022/A22P002.c
-git commit -m "Add A22P002: [description]"
-git push origin main
-```
-
-### Branch Protection
-- `main` branch is protected: requires PR review before merge
-- All changes should go through feature branches and pull requests
-
----
-
-## 🛠️ Technologies & Tools
-
-- **Compiler:** GCC (C11 standard)
-- **Build Tool:** GNU Makefile
-- **SCM:** Git
-- **Version Control Platform:** GitHub
-
-### Compilation Flags (Makefile)
-```makefile
--Wall -Wextra      # Enable compiler warnings
--O2                # Optimization level 2
--MMD -MP           # Automatic dependency generation
-```
-
----
-
 ## 📊 Portfolio Highlights
 
 - **Multiple projects** across 2022+ academic/professional journey
@@ -132,7 +90,7 @@ See [LICENSE](LICENSE) file for details.
 
 Feel free to explore, fork, or reach out:
 - **GitHub:** [@Endy-04](https://github.com/Endy-04)
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile) *(update with your URL)*
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/andrei-francesco-burlacu-2b5759361)
 
 ---
 
